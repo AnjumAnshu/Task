@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration form</title>
+   <link rel="stylesheet" href="loginpage.html">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <style>
+    body {
+      background-color: whitesmoke;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 15px;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+
+    img {
+      border-radius: 7px;
+    }
+
+    h2 {
+      text-align: center;
+      color: rgb(241, 51, 51);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+
+
+    #icon {
+      text-align: center;
+    }
+
+    
+
+    .terms label a {
+      text-decoration: none;
+      display: inline-block;
+      color: rgb(241, 51, 51);
+    }
+
+    .terms {
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+
+    input#checkbox {
+      color: rgb(241, 51, 51);
+    }
+
+    input[type="checkbox"] {
+      accent-color: red;
+    }
+
+    .signup-btn {
+      padding: 10px;
+      margin-right: 15px;
+      width: 125px;
+      height: 42px;
+      border-radius: 7px;
+      background-color: rgb(241, 51, 51);
+      color: white;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      border: 2px solid rgb(241, 51, 51);
+    }
+
+    .signup-btn:hover {
+      background-color: white;
+      color: rgb(241, 51, 51);
+      cursor: pointer;
+    }
+
+    .signin-btn {
+      padding: 10px;
+      margin-left: 15px;
+      width: 125px;
+      height: 42px;
+      border-radius: 7px;
+      border: 2px solid rgb(241, 51, 51);
+      color: rgb(241, 51, 51);
+      background-color: white;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+    .signin-btn a{
+      text-decoration: none;
+      color: rgb(241, 51, 51);
+    }
+
+
+    .signin-btn :hover {
+     
+      cursor: pointer;
+    }
+    .signin-btn a:hover {
+      cursor: pointer;
+      color: rgb(241, 51, 51);
+    }
+
+    .main {
+      width: 846px;
+      margin: 10% auto;
+      background-color: white;
+      position: relative;
+      border-radius: 7px;
+    }
+
+    .img-parent {
+      width: 344px;
+      height: 500px;
+      position: relative;
+      float: right;
+    }
+
+    .img-child {
+      height: 500px;
+      border-radius: 7px;
+      background-image: url(images/img.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 100% 100%;
+    }
+
+    .img-parent img {
+      width: auto;
+      height: 450px;
+      right: 20px;
+
+    }
+
+    form input {
+      width: 75%;
+      margin-bottom: 15px;
+
+      padding: 13px 10px;
+
+      border-radius: 7px;
+      border-color: whitesmoke;
+      background-color: whitesmoke;
+    }
+
+    .terms input {
+      width: 13px;
+    }
+
+    .form1 {
+      display: inline-block;
+      width: 500px;
+      height: 448px;
+      border-top: 2px solid whitesmoke;
+      border-bottom: 2px solid whitesmoke;
+      border-left: 2px solid whitesmoke;
+      border-radius: 7px;
+      padding-top: 50px;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    .button {
+      padding-left: 46px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="form1">
+      <h2>Create Account</h2>
+      <div id="icon">
+        <a href="http://google.com"><i class="fa-brands fa-google fa-sm" style="color: black"></i></a>
+        &nbsp;&nbsp;<a href="http://facebook.com"><i class="fa-brands fa-facebook fa-sm" style="color: black"></i></a>
+        &nbsp;&nbsp;<a href="http://twitter.com"><i class="fa-brands fa-twitter fa-sm" style="color: black"></i></a>
+        &nbsp;&nbsp;<a href="http://vk.com"><i class="fa-brands fa-vk fa-sm" style="color: black"></i></a>
+      </div>
+      <form action="#">
+        <p>or use your email for registration:</p>
+        <input type="text" placeholder="Name" />
+        <br />
+        <input type="text" placeholder="Email" />
+        <br />
+        <input type="Password" placeholder="Password" />
+        <br />
+        <div class="terms">
+          <input type="checkbox" id="checkbox" checked />
+          <label for="checkbox">I agree to the <a href="#">Terms</a> and
+            <a href="#">Privacy Policy.</a></label>
+        </div>
+        <br />
+        <div class="button">
+          <span><button type="button" class="signup-btn">Sign Up</button>
+            <button type="button" class="signin-btn"><a href="loginpage.html">Sing in</a></button>
+          </span>
+        </div>
+      </form>
+    </div>
+    <div class="img-parent">
+      <!-- <img src="first project (2).jpg" alt=""> -->
+      <div class="img-child"></div>
+    </div>
+  </div>
+</body>
+
+</html>
