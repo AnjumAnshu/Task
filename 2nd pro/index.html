@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: whitesmoke;
+        }
+
+        .navigation {
+            width: 100%;
+            margin-bottom: 12px;
+            display: flex;
+            background-color: white;
+            position: sticky;
+        }
+
+        .navigation img {
+            margin-left: 35px;
+        }
+
+        .topnav li {
+            padding: 10px 10px;
+            font-size: larger;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+
+        li {
+            text-align: center;
+            float: left;
+            list-style: none;
+        }
+
+        .topbutton {
+            padding: 9px 0px 8px 25px;
+            font-size: large;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            background-color: skyblue;
+            border-radius: 20px;
+            width: 130px;
+            border: none;
+            font-weight: 600;
+            height: 40px;
+            position: relative;
+            left: 160px;
+        }
+
+        .approval {
+            height: 68px;
+            background-color: #fedc26;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+
+        }
+
+        i {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+        a {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(20, 147, 197);
+            font-size: larger;
+            text-decoration: none;
+        }
+
+        .KYC {
+            height: 48px;
+            background: #f6f6f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: larger;
+            color: #000;
+            font-weight: 600;
+
+        }
+
+        .kyc {
+            color: black;
+            font-size: 20px;
+            padding-left: 5px;
+        }
+
+        .container1 {
+            display: flex;
+            background-color: #002970;
+            height: 180px;
+
+            justify-content: space-between;
+            padding: 40px 5% 0;
+        }
+
+        p {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* margin-right: 45px; */
+
+        }
+
+        .dot {
+            height: 5px;
+            width: 5px;
+            background-color: white;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        /* .image1 {
+            position: relative;
+            margin-top: -72px;
+            width: 100%;
+            height: 200px;
+
+        } */
+        .ticket {
+            text-align: center;
+        }
+
+        .angle i{
+            height: 33px;
+            width: 35px;
+            border-radius: 50%;
+            /* position: absolute; */
+            /* bottom: 8px; */
+            /* left: 120px; */
+            background-color: white;
+            padding: 10px;
+        }
+
+        
+
+
+       
+
+        .imgmovieticket img {
+            position: relative;
+            bottom: 8em;
+            border-radius: 15px;
+        }
+
+        .container2 {
+            display: flex;
+            height: 70px;
+            width: 100%;
+            background-color: white;
+            box-shadow: 10px 13px 10px whitesmoke;
+            box-shadow: -10px -13px -10px whitesmoke;
+            position: absolute;
+            top: 37em;
+        }
+
+
+        .nowshowing button {
+            width: 143px;
+            height: 37px;
+            padding: 8px 8px;
+            border-radius: 4px;
+            border: 3px solid whitesmoke;
+            background-color: white;
+        }
+
+        .nowshowing button:hover {
+            background-color: whitesmoke;
+            cursor: pointer;
+        }
+
+        .comingsoon button {
+            width: 165px;
+            padding: 10px 8px;
+            border: none;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        .comingsoon button:hover {
+            background-color: white;
+            cursor: pointer;
+
+        }
+
+        .searchbar i {
+            margin-left: 40px;
+
+
+        }
+
+        .searchbar input {
+            font-size: 18px;
+            color: #101010;
+            width: 250px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: none;
+        }
+
+        .chennai {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 23px;
+            border-radius: 8px;
+            padding: 8px 12px;
+            border: 1px solid hsla(0, 0%, 6%, .13);
+            position: relative;
+            left: 500px;
+        }
+
+        .container3 {
+            height: 55em;
+            display: block;
+            margin: auto;
+            width: 70%;
+            background-color: white;
+            border-radius: 18px;
+        }
+
+        .container3 h2 {
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            margin: 0 0 18px;
+            padding-top: 15px;
+            padding-left: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="navigation">
+        <img src="https://pwebassets.paytm.com/commonwebassets/paytmweb/header/images/logo.svg" alt="">
+        <nav class="navbar">
+            <ul class="topnav">
+                <li>Paytm for Consumer</li>
+                <li>Paytm for business</li>
+                <li>Investor Relations</li>
+                <li>Company</li>
+                <li>Career </li><button class="topbutton" type="submit">Sign In<i class="fa-solid fa-circle-user fa-xl"
+                        style="color: #002970;"></i></button>
+            </ul>
+        </nav>
+    </section>
+    <section class="approval">
+        <span>
+            <i class="fa-solid fa-bullhorn"></i>We have received approval from NPCI as a Third-Party Application
+            Provider (TPAP). <a href="#">Click to know more.</a>
+        </span>
+    </section>
+    <section class="wallet">
+        <span class="KYC">
+            No Wallet KYC Required</i><i class='far fa-grin-beam' style='font-size:36px;color:yellow'></i> to pay using
+            UPI on paytm.<a class="kyc" href="#">Learn More.</a>
+        </span>
+    </section>
+    <section>
+        <div class="icons">
+            <div class="container1">
+                <div id="prepaid">
+                    <i class="fa-solid fa-mobile-screen fa-xl" style="color: white;"></i>
+                    <p>Pre/Postpaid</p>
+                </div>
+                <div id="electricity">
+                    <i class="fa-regular fa-lightbulb fa-xl" style="color: white;"></i>
+                    <p>Electricity</p>
+                </div>
+                <div id="dth">
+                    <i class="fa-solid fa-satellite-dish fa-xl" style="color: white;"></i>
+                    <p>DTH</p>
+                </div>
+                <div id="metro">
+                    <i class="fa-solid fa-train-tram fa-xl" style="color: white;"></i>
+                    <p>Metro</p>
+                </div>
+                <div id="landline">
+                    <i class="fa-solid fa-square-phone fa-xl" style="color: white;"></i>
+                    <p>Landline</p>
+                </div>
+                <div id="fasttag">
+                    <i class="fa-solid fa-cart-shopping fa-xl" style="color: white;"></i>
+                    <p>BuyFASTag</p>
+                </div>
+                <div id="education">
+                    <i class="fa-solid fa-book fa-xl" style="color: white;"></i>
+                    <p>Education</p>
+                </div>
+                <div id="loan">
+                    <i class="fa-solid fa-hand-holding-dollar fa-xl" style="color: white;"></i>
+                    <p>Pay Loan</p>
+                </div>
+                <div id="invest">
+                    <i class="fa-solid fa-sack-dollar fa-xl" style="color: white;"></i>
+                    <p>Invest in Stocks</p>
+                </div>
+                <div id="cylinder">
+                    <i class="fa-solid fa-fire fa-xl" style="color: white;"></i>
+                    <p>Book a Cylinder</p>
+                </div>
+                <div id="paytm">
+                    <i class="fa-solid fa-indian-rupee-sign fa-xl" style="color: white;"></i>
+                    <p>Paytm First</p>
+                </div>
+                <div id="more">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <p>More</p>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="angle">
+                    <i id="left" class="fa-solid fa-angle-left fa-xl" style="color: rgba(128, 128, 128, 0.486);"></i>
+                </div>
+                <div class="ticket">
+                    <div class="imgmovieticket">
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2660640/1715285749627.jpg?format=webp&imwidth=1750"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    
+
+    <section>
+        <div class="container2">
+            <div class="button1">
+                <ul>
+                    <li>
+                        <div class="nowshowing">
+                            <button>Now showing</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="comingsoon">
+                            <button>Coming Soon</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="searchbar">
+                                <i class="fa-solid fa-magnifying-glass fa-xs"
+                                    style="font-size:large; color:  black;"></i>
+                                <input type="text" placeholder="Search Movie or a Cinema">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="chennai">
+                            <i class="fa-solid fa-location-dot fa-small" style="color: black;"></i>
+                            <span>Chennai</span>
+
+                            <i class="fa-solid fa-caret-down fa-xl"></i>
+
+
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="container3">
+        <h2>Movies In Chennai</h2>
+
+        <div class="moviesinchennai">
+
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
